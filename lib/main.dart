@@ -71,21 +71,20 @@ class CustomCard extends StatelessWidget {
       ),
       child: Row(
         children: [
-          if (imageUrl != null)
-            Container(
-              width: 64,
-              height: 64,
-              margin: const EdgeInsets.only(right: 16),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(16),
-                image: DecorationImage(
-                  fit: BoxFit.cover,
-                  image: AssetImage(
-                    imageUrl!,
-                  ),
+          Container(
+            width: 64,
+            height: 64,
+            margin: const EdgeInsets.only(right: 16),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(16),
+              image: DecorationImage(
+                fit: BoxFit.cover,
+                image: AssetImage(
+                  imageUrl!,
                 ),
               ),
             ),
+          ),
           Column(
             children: [
               Text(
